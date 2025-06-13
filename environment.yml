@@ -1,0 +1,8 @@
+name: icmi2025
+
+channels:
+  - conda-forge
+
+dependencies:
+  - python=3.13.3
+  - poetry=2.1.3
