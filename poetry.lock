@@ -75,6 +75,28 @@ astroid = ["astroid (>=2,<4)"]
 test = ["astroid (>=2,<4)", "pytest", "pytest-cov", "pytest-xdist"]
 
 [[package]]
+name = "bert-score"
+version = "0.3.13"
+description = "PyTorch implementation of BERT score"
+optional = false
+python-versions = ">=3.6"
+groups = ["main"]
+files = [
+    {file = "bert_score-0.3.13-py3-none-any.whl", hash = "sha256:bbbb4c7fcdaa46d7681aff49f37f96faa09ed74e1b150e659bdc6b58a66989b9"},
+    {file = "bert_score-0.3.13.tar.gz", hash = "sha256:8ffe5838eac8cdd988b8b1a896af7f49071188c8c011a1ed160d71a9899a2ba4"},
+]
+
+[package.dependencies]
+matplotlib = "*"
+numpy = "*"
+packaging = ">=20.9"
+pandas = ">=1.0.1"
+requests = "*"
+torch = ">=1.0.0"
+tqdm = ">=4.31.1"
+transformers = ">=3.0.0"
+
+[[package]]
 name = "cachetools"
 version = "5.5.2"
 description = "Extensible memoizing collections and decorators"
@@ -3384,4 +3406,4 @@ files = [
 [metadata]
 lock-version = "2.1"
 python-versions = ">=3.13"
-content-hash = "f6e7274edde3610f0d4089a9fd53676dc6400ed20e3c85ca084fc4cc09df4388"
+content-hash = "b08c12975df44ff992689cb3ec7b61fda64747f3d70b4436469a448e4a08b310"

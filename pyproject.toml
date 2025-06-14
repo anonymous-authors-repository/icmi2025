@@ -22,6 +22,7 @@ dependencies = [
     "scikit-learn (>=1.6.1,<2.0.0)",
     "fastdtw (>=0.3.4,<0.4.0)",
     "statsmodels (>=0.14.4,<0.15.0)",
+    "bert-score (>=0.3.13,<0.4.0)",
 ]
 
 [build-system]
