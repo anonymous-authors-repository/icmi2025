@@ -1,0 +1,57 @@
+Group,Gesture,Accuracy,Correct,Incorrect
+Human-S,Increase volume,0.803921568627451,82,20
+Human-S,Decrease volume,0.9313725490196079,95,7
+Human-S,Mute microphone,0.7171717171717171,71,28
+Human-S,Unmute microphone,0.24210526315789474,23,72
+Human-S,Turn off camera,0.1782178217821782,18,83
+Human-S,Turn on camera,0.19607843137254902,20,82
+Human-S,Ask for a question,1.0,101,0
+Human-S,End call,0.009900990099009901,1,100
+Human-NS,Increase volume,0.3627450980392157,37,65
+Human-NS,Decrease volume,0.6666666666666666,68,34
+Human-NS,Mute microphone,0.7575757575757576,75,24
+Human-NS,Unmute microphone,0.3020833333333333,29,67
+Human-NS,Turn off camera,0.1782178217821782,18,83
+Human-NS,Turn on camera,0.16161616161616163,16,83
+Human-NS,Ask for a question,0.9900990099009901,100,1
+Human-NS,End call,0.1188118811881188,12,89
+LLM-S,Increase volume,0.21782178217821782,22,79
+LLM-S,Decrease volume,0.1188118811881188,12,89
+LLM-S,Mute microphone,0.41414141414141414,41,58
+LLM-S,Unmute microphone,0.06,6,94
+LLM-S,Turn off camera,0.0196078431372549,2,100
+LLM-S,Turn on camera,0.0196078431372549,2,100
+LLM-S,Ask for a question,0.8333333333333334,85,17
+LLM-S,End call,0.0,0,102
+LLM-NS,Increase volume,0.0297029702970297,3,98
+LLM-NS,Decrease volume,0.04950495049504951,5,96
+LLM-NS,Mute microphone,0.47474747474747475,47,52
+LLM-NS,Unmute microphone,0.05319148936170213,5,89
+LLM-NS,Turn off camera,0.07920792079207921,8,93
+LLM-NS,Turn on camera,0.019801980198019802,2,99
+LLM-NS,Ask for a question,0.9702970297029703,98,3
+LLM-NS,End call,0.0784313725490196,8,94
+LLM-HP,Increase volume,0.010309278350515464,1,96
+LLM-HP,Decrease volume,0.03125,3,93
+LLM-HP,Mute microphone,0.08791208791208792,8,83
+LLM-HP,Unmute microphone,0.046511627906976744,4,82
+LLM-HP,Turn off camera,0.0,0,96
+LLM-HP,Turn on camera,0.0,0,92
+LLM-HP,Ask for a question,0.8556701030927835,83,14
+LLM-HP,End call,0.0,0,93
+LLM-LDMK,Increase volume,0.08247422680412371,8,89
+LLM-LDMK,Decrease volume,0.041666666666666664,4,92
+LLM-LDMK,Mute microphone,0.15384615384615385,14,77
+LLM-LDMK,Unmute microphone,0.03488372093023256,3,83
+LLM-LDMK,Turn off camera,0.0,0,96
+LLM-LDMK,Turn on camera,0.0,0,91
+LLM-LDMK,Ask for a question,0.5051546391752577,49,48
+LLM-LDMK,End call,0.0,0,93
+LLM-COMB,Increase volume,0.0,0,97
+LLM-COMB,Decrease volume,0.010416666666666666,1,95
+LLM-COMB,Mute microphone,0.15384615384615385,14,77
+LLM-COMB,Unmute microphone,0.023255813953488372,2,84
+LLM-COMB,Turn off camera,0.0,0,96
+LLM-COMB,Turn on camera,0.0,0,92
+LLM-COMB,Ask for a question,0.8144329896907216,79,18
+LLM-COMB,End call,0.0,0,93
