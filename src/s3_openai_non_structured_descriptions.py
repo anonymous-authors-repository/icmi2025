@@ -114,17 +114,13 @@ def describe_hand_gesture(image_paths: list) -> str:
         {
             "role": "system",
             "content": """
-You are a specialist assistant trained to analyze a sequence of images from a video clip and describe systematically the user's hand gestures. Don't describe the meaning of the gesture, indication, or suggestion of use, nor the user's intention. If the user does not perform any gesture, report this. Consider the development of the gesture over the sequence of images, not each image individually.
+You are a helpful assistant trained to analyze a sequence of images from a video clip and describe the user's hand gestures. Describe concisely the identified hand gestures in a one-sentence. Don't describe the meaning of the gesture, indication, or suggestion of use, nor the user's intention. If the user does not perform any gesture, report this. Consider the development of the gesture over the sequence of images, not each image individually.
             """
         },
         {
             "role": "user",
             "content": """
-Here are sequencial images in which the user performs none, one single, or two combined hand gestures in sequence. Consider two gestures only if they presented consistent differences in hand pose and action. Ignore hand's resting positions. Include hand interactions with specifc body parts as head/face/mouth/nose/ear/eyes/other hand/etc. if they occur. Ignore hand just passing in front of face. Describe concisely the identified hand gestures in a one-sentence, very strictly according to the following structure: A / A '+' A, where 'A' represents the description for a unique gesture, and 'A '+' A' represents the description for two sequential gestures. A = 1',' 2',' 3',' 4', where:
-1 -> How many hands [One hand/Two hands];
-2 -> Main part/parts of the hand used in the specific gesture [hand/palm/back hand/index finger/thumb finger/all fingers/index and thumb fingers/etc.], hand pose/position/shape [open/close/point/extend/pinch/stack/touch/draw/curve/etc.], and facing direction [up/down/in/out/front/up/dow/left/right/forward/etc.];
-3 -> Main gesture's action/movement/positioning [raised/moving/going/opening/closing/rotating/turning/holding/pressing/spreading/swiping/pointing/waving/shaking/clapping/etc.], and the action/movement/direction [away/upwards/downwards/inwards/outwards/forwards/leftwards/rightwards/apart/together/etc.];
-4 -> How the gesture is perfomed for the user: a dynamic gesture preformed once; a dynamic gestureperformed repeatedly; a static gesture with stationary hand position with small variances in hand pose or position [once/repeatedly/stationary].
+Here are the images in which the user performs none, one single, or two combined hand gestures in sequence. Ignore the hands' initial and final resting positions. Focus on describing the fingers and hand pose, orientation and direction, and the main movements that characterize the action gestures. Include hand interactions with the head parts if they occur.
             """
         },
         {
@@ -175,7 +171,7 @@ if __name__ == "__main__":
     # Define the file path and column names.
     file_path = os.path.join(
         os.path.dirname(__file__),
-        "../data/descriptions/d2_llm_structured_descriptions.csv"
+        "../data/descriptions/d3_openai_non_structured_descriptions.csv"
     )
 
     columns = [ f"c{i}_description" for i in range(1, 9) ]
@@ -190,7 +186,7 @@ if __name__ == "__main__":
     # Create a list of all the folders in the images directory.
     image_folder = os.path.join(
         os.path.dirname(__file__),
-        "../dataset/images/"
+        "dataset/images/"
     )
 
     folders = [ f.path for f in os.scandir(image_folder) if f.is_dir() ]

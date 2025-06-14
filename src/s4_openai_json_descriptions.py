@@ -164,7 +164,7 @@ if __name__ == "__main__":
         # Define the file path and column names.
         file_path = os.path.join(
             os.path.dirname(__file__),
-            f"../data/descriptions/d{i + 4}_llm_{stage}_descriptions.csv"
+            f"../data/descriptions/d{i + 4}_openai_{stage}_descriptions.csv"
         )
 
         columns = [ f"c{j}_description" for j in range(1, 9) ]
