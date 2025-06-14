@@ -171,7 +171,7 @@ if __name__ == "__main__":
     # Define the file path and column names.
     file_path = os.path.join(
         os.path.dirname(__file__),
-        "../data/d3_llm_non_structured_descriptions.csv"
+        "../data/descriptions/d3_llm_non_structured_descriptions.csv"
     )
 
     columns = [ f"c{i}_description" for i in range(1, 9) ]

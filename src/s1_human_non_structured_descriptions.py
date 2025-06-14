@@ -61,7 +61,7 @@ if __name__ == "__main__":
     # Save the ordered DataFrame to the CSV file.
     file_path = os.path.join(
         os.path.dirname(__file__),
-        "../data/d1_human_non_structured_descriptions.csv"
+        "../data/descriptions/d1_human_non_structured_descriptions.csv"
     )
 
     df.to_csv(file_path, index=False)
