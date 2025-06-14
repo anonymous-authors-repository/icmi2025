@@ -1,4 +1,4 @@
-# Human vs. AI-Based Textual Annotations of Mid-Air Hand Gestures
+# The Art of Description: Evaluating Human vs. AI-Based Textual Annotations of Mid-Air Hand Gestures
 
 This repository contains code, data, and analysis for evaluating human and AI-generated textual annotations of mid-air hand gestures, focusing on hybrid meeting platforms. The project explores how gestures are described, predicted, and classified using both human input and large language models (LLMs).
 
@@ -60,6 +60,12 @@ poetry install --no-root
 
 - Processed datasets and analysis results in `outputs/`.
 - Visualizations in `pgf/` (for LaTeX inclusion).
+
+## Citation
+
+If you use this code or data, please cite the associated paper:
+
+> Anonymous Authors (2025). The Art of Description: Evaluating Human vs. AI-Based Textual Annotations of Mid-Air Hand Gestures. In: Proceedings of the 27th ACM International Conference on Multimodal Interaction, ICMI 2025, Canberra, Australia, October 13-17. 2025. https://doi.org/00.0000/000-0-000-00000-0_0
 
 ## License
 
